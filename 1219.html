@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #0af;
+/*            transform: rotate(45deg)scale(1,2);*/
+/*            transform: scale(1,2)rotate(45deg);*/
+/*            transform: perspective(800px)rotateX(45deg);*/
+/*            transform: perspective(800px)translateZ(500px);*/
+/*            transform: perspective(800px)translateZ(-500px);*/
+/*            transform: perspective(800px)translateX(500px);*/
+/*            transform: perspective(800px)translateX(-500px);*/
+/*              animation: go .5s 5s 4;*/
+               animation: go 5s infinite ;
+        }
+         
+        @keyframes go {
+/*                from {top:0;}*/
+/*                to {top:500px;}*/
+/*            0% {top:0;left:0;}*/
+/*            25% {top:0;left:400px;}*/
+/*            50% {top:400px;left:400px;}*/
+/*            75% {top:400px;left:0%;}*/
+/*            100% {top:0;left:0;}*/
+            
+/*            from {*/
+/*                transform: rotate(0deg);*/
+/*            }*/
+/*            to {transform: rotate(30deg);*/
+/*            }*/
+            
+        0% {transform: perspective(700px)rotateX(0)rotateY(0)rotateZ(45deg);
+        }
+        50% {transform: perspective(700px)rotateX(180deg)rotateY(0)rotateZ(0deg);    
+    
+        }
+        100% {transform: perspective(700px)rotateX(180deg)rotateY(180deg)rotateZ(45deg);
+            
+        }
+            
+        }
+        
+    
+    
+    </style>
+    
+</head>
+<body>
+   <div class="box"></div>
+    
+</body>
+</html>
